@@ -1,15 +1,49 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## CI/CD
+
+This project uses GitHub Actions for continuous integration and deployment.
+
+### CI Pipeline
+
+The CI workflow runs on every push and pull request to `main` or `develop` branches:
+- **Linting**: Runs ESLint to check code quality
+- **Type Checking**: Validates TypeScript types
+- **Build**: Builds the Next.js application
+
+### CD Pipeline
+
+The CD workflow runs on pushes to `main` branch:
+- **Build**: Creates production build
+- **Deploy**: Deploys to Vercel (if configured)
+
+### GitHub Secrets
+
+To enable Vercel deployment, add these secrets in your GitHub repository settings:
+
+1. Go to: `Settings` → `Secrets and variables` → `Actions`
+2. Add the following secrets:
+   - `VERCEL_TOKEN`: Your Vercel API token
+   - `VERCEL_ORG_ID`: Your Vercel organization ID
+   - `VERCEL_PROJECT_ID`: Your Vercel project ID
+
+For Convex environment variables, add:
+- `NEXT_PUBLIC_CONVEX_URL`: Your Convex deployment URL (if needed for build)
+
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+pnpm dev
+```
+
+Or with npm/yarn/bun:
+
+```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
 # or
 bun dev
 ```
