@@ -1,9 +1,10 @@
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="text-center">
-        <h1 className="text-4xl font-bold">Audiophile is Cooking 🔥</h1>
-      </main>
-    </div>
+    <main id="main-content">
+      <div className="container mx-auto px-6">
+        <h1 className="text-4xl font-bold">Home Page</h1>
+        <p>Home page content will be implemented in Phase 4</p>
+      </div>
+    </main>
   );
 }
