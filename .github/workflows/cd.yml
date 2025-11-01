@@ -36,7 +36,7 @@ jobs:
           NEXT_PUBLIC_CONVEX_URL: ${{ secrets.NEXT_PUBLIC_CONVEX_URL || '' }}
 
       - name: Deploy to Vercel (if configured)
-        if: env.VERCEL_ORG_ID != '' && env.VERCEL_PROJECT_ID != ''
+        if: ${{ secrets.VERCEL_TOKEN != '' && secrets.VERCEL_ORG_ID != '' && secrets.VERCEL_PROJECT_ID != '' }}
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
