@@ -1,0 +1,2 @@
+# Pre-commit hook will be configured here when needed
+# For now, tests can be run manually with: pnpm test
