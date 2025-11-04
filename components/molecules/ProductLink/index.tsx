@@ -1,0 +1,48 @@
+import React from 'react'
+import { Box, Heading, Button, Image } from '@chakra-ui/react'
+import { OtherProductsProps } from '@/components/organisms/OtherProducts'
+import Link from 'next/link'
+
+const ProductLink: React.FC<OtherProductsProps> = ({
+  slug,
+  name,
+  image,
+}): React.JSX.Element => {
+  return (
+    <Box as="li">
+      <Box as="picture">
+        <source media="(min-width: 62em)" srcSet={image.desktop} />
+        <source media="(min-width: 48em)" srcSet={image.tablet} />
+        <Image
+          src={image.mobile}
+          objectFit="cover"
+          width="100%"
+          borderRadius="0.5rem"
+          alt={name}
+        />
+      </Box>
+      <Heading
+        as="h3"
+        fontSize={{ base: '1.5rem' }}
+        mt={{ base: '2rem' }}
+        letterSpacing="0.1069rem"
+      >
+        {name}
+      </Heading>
+      <Link href={`/${slug}`}>
+        {/* @ts-expect-error - Custom recipe variant */}
+        <Button 
+          cursor="pointer" 
+          variant="primary" 
+          mt={{ base: '32px' }}
+          className="px-10 py-[1.125rem]"
+          style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '1.125rem', paddingBottom: '1.125rem' }}
+        >
+          See Product
+        </Button>
+      </Link>
+    </Box>
+  )
+}
+
+export default ProductLink
