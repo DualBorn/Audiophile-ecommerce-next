@@ -1,4 +1,5 @@
 import { Box, Stack, Heading } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 import ProductLink from '@/components/molecules/ProductLink'
 
 export type OtherProductsProps = {
@@ -9,7 +10,7 @@ export type OtherProductsProps = {
 
 const OtherProducts: React.FC<{ other: OtherProductsProps[] | undefined }> = ({
   other,
-}): JSX.Element => {
+}): ReactElement => {
   return (
     <Box
       mt={{ base: '7.5rem' }}

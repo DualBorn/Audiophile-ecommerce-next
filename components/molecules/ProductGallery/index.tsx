@@ -1,4 +1,5 @@
 import { SimpleGrid, Image, Box } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 import { CategoryImage } from '@/models/Product'
 
 type ProductGalleryProps = {
@@ -11,7 +12,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({
   first,
   second,
   third,
-}): JSX.Element => {
+}): ReactElement => {
   return (
     <SimpleGrid
       gridTemplateColumns={{

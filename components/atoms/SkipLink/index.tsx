@@ -1,6 +1,7 @@
 import { Button } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 
-const SkipLink = (): JSX.Element => {
+const SkipLink = (): ReactElement => {
   return (
     <Button
       as="a"

@@ -1,10 +1,11 @@
 import { Box } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 
 import Navbar from '@/components/molecules/Navbar'
 import MobileNav from '@/components/molecules/MobileNav'
 import SkipLink from '@/components/atoms/SkipLink'
 
-const Header = (): JSX.Element => {
+const Header = (): ReactElement => {
   return (
     <Box
       as="header"

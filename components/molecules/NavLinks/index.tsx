@@ -1,13 +1,13 @@
 'use client'
 
 import { HStack, Box } from '@chakra-ui/react'
-import React from 'react'
+import React, { ReactElement } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import { links } from '@/lib/links'
 
-const NavLinks = (): JSX.Element => {
+const NavLinks = (): ReactElement => {
   const pathname = usePathname()
 
   return (

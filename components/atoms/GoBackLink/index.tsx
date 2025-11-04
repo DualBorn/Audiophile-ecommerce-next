@@ -2,8 +2,9 @@
 
 import { Button } from '@chakra-ui/react'
 import { useRouter } from 'next/navigation'
+import React, { ReactElement } from 'react'
 
-const GoBackLink = (): JSX.Element => {
+const GoBackLink = (): ReactElement => {
   const router = useRouter()
 
   return (

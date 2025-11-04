@@ -1,11 +1,12 @@
 import { VStack } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 
 import CategoryPageItem from '@/components/molecules/CategoryPageItem'
 import { Product } from '@/models/Product'
 
 const ProductsList: React.FC<{ products: Product[] }> = ({
   products,
-}): JSX.Element => {
+}): ReactElement => {
   return (
     <VStack
       mt={{ base: '4rem' }}

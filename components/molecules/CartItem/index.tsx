@@ -1,11 +1,12 @@
 import { Box, Text, HStack } from '@chakra-ui/react'
 import { useDispatch } from 'react-redux'
 import Image from 'next/image'
+import React, { ReactElement } from 'react'
 import ProductQuantity from '@/components/atoms/ProductQuantity'
 import type { CartItem } from '@/models/CartItem'
 import { increaseQuantity, decreaseQuantity } from '@/store/CartSlice'
 
-const CartItemComponent: React.FC<{ item: CartItem }> = ({ item }): JSX.Element => {
+const CartItemComponent: React.FC<{ item: CartItem }> = ({ item }): ReactElement => {
   const dispatch = useDispatch()
 
   const increment = () => {

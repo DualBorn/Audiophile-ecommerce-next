@@ -1,11 +1,12 @@
 import { Box, Stack } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
+import React, { ReactElement } from 'react'
 
 import { isNavOpen } from '@/store/UISlice'
 import CategoryLink from '@/components/molecules/CategoryLink'
 import { links } from '@/lib/links'
 
-const MobileNav = (): JSX.Element => {
+const MobileNav = (): ReactElement => {
   const navOpen = useSelector(isNavOpen)
   return (
     <Box

@@ -1,10 +1,11 @@
 import { IconButton } from '@chakra-ui/react'
 import Image from 'next/image'
 import { useSelector, useDispatch } from 'react-redux'
+import React, { ReactElement } from 'react'
 
 import { isNavOpen, toggleNav } from '@/store/UISlice'
 
-const MenuIcon = (): JSX.Element => {
+const MenuIcon = (): ReactElement => {
   const navOpen = useSelector(isNavOpen)
   const dispatch = useDispatch()
 

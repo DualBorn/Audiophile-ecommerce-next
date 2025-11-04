@@ -1,6 +1,7 @@
 'use client'
 
 import { Box, Stack, Image } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 import ProductGallery from '@/components/molecules/ProductGallery/'
 import CategoriesLinks from '@/components/organisms/CategoriesLinks'
 import BestGear from '@/components/molecules/BestGear/index'
@@ -11,7 +12,7 @@ import ProductDescription from '@/components/molecules/ProductDescription'
 
 const ProductDetails: React.FC<{ product: Product }> = ({
   product,
-}): JSX.Element => {
+}): ReactElement => {
   return (
     <>
       <Stack

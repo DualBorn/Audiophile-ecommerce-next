@@ -1,4 +1,5 @@
 import { Text, HStack } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 
 type SummaryLineProps = {
   name: string
@@ -7,7 +8,7 @@ type SummaryLineProps = {
   grandTotal?: boolean
 }
 
-const SummaryLine: React.FC<SummaryLineProps> = (props): JSX.Element => {
+const SummaryLine: React.FC<SummaryLineProps> = (props): ReactElement => {
   const { name, amount, grandTotal = false, ...other } = props
   return (
     <HStack justify="space-between" {...other}>

@@ -1,9 +1,10 @@
 import { Box, Portal } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
+import React, { ReactElement } from 'react'
 
 import { isNavOpen } from '@/store/UISlice'
 
-const Overlay = (): JSX.Element => {
+const Overlay = (): ReactElement => {
   const navOpen = useSelector(isNavOpen)
 
   return (

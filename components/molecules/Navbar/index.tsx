@@ -1,11 +1,12 @@
 import { Container, Flex } from '@chakra-ui/react'
+import React, { ReactElement } from 'react'
 
 import Logo from '@/components/atoms/Logo'
 import MenuIcon from '@/components/atoms/MenuIcon'
 import CartIcon from '@/components/atoms/CartIcon'
 import NavLinks from '@/components/molecules/NavLinks'
 
-const Navbar = (): JSX.Element => {
+const Navbar = (): ReactElement => {
   return (
     <Container maxW="container.lg" px={6} mx="auto">
       <Flex
