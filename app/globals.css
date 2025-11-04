@@ -40,9 +40,13 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-white);
+  background-color: #ffffff !important;
   color: var(--color-black);
   line-height: 1.5;
+}
+
+html {
+  background-color: #ffffff !important;
 }
 
 /* Container utility */
@@ -83,4 +87,18 @@ body {
 
 .skip-to-content:focus {
   top: 0;
+}
+
+/* Ensure checkout modal is centered and visible above backdrop */
+[data-scope="dialog"][data-part="positioner"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1401 !important;
+}
+
+[data-scope="dialog"][data-part="backdrop"] {
+  z-index: 1400 !important;
 }
