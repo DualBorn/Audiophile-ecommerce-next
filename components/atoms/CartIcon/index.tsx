@@ -1,12 +1,12 @@
 import { Button, Center } from '@chakra-ui/react'
 import { useSelector } from 'react-redux'
 import Image from 'next/image'
-import React, { ReactElement } from 'react'
+import React from 'react'
 
 import { useModal } from '@/context/modal-context'
 import { totalQuantity } from '@/store/CartSlice'
 
-const CartIcon = (): ReactElement => {
+const CartIcon = (): React.JSX.Element => {
   const { onCartModalOpen } = useModal()
   const quantity = useSelector(totalQuantity)
 
