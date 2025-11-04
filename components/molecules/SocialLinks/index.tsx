@@ -5,15 +5,16 @@ const SocialLinks = (): React.JSX.Element => {
   return (
     <HStack
       gap="1rem"
-      sx={{
-        '& svg path': { transition: 'fill .2s' },
-        '& a:hover svg path': { fill: 'accent' },
-      }}
       justify={{ base: 'center', md: 'flex-end' }}
       align="center"
+      css={{
+        '& svg path': { transition: 'fill .2s' },
+        '& a:hover svg path': { fill: 'var(--chakra-colors-accent)' },
+      }}
     >
       <Box
         as="a"
+        // @ts-expect-error - href prop on Box with as="a"
         href="https://www.facebook.com"
         target="_blank"
         rel="noopener noreferrer"
@@ -33,6 +34,7 @@ const SocialLinks = (): React.JSX.Element => {
       </Box>
       <Box
         as="a"
+        // @ts-expect-error - href prop on Box with as="a"
         href="https://twitter.com"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,6 +54,7 @@ const SocialLinks = (): React.JSX.Element => {
       </Box>
       <Box
         as="a"
+        // @ts-expect-error - href prop on Box with as="a"
         href="https://www.instagram.com"
         target="_blank"
         rel="noopener noreferrer"

@@ -18,7 +18,7 @@ const CategoryPageItem: React.FC<Product & { index?: number }> = ({
 
   return (
     <Stack
-      spacing={{ base: '2rem', lg: '0' }}
+      gap={{ base: '2rem', lg: '0' }}
       direction={{ base: 'column', lg: 'row' }}
       alignItems={{ lg: 'center' }}
     >
@@ -83,6 +83,7 @@ const CategoryPageItem: React.FC<Product & { index?: number }> = ({
         <Link href={`/${category}/${slug}`}>
           <Button 
             cursor="pointer" 
+            // @ts-expect-error - Custom recipe variant
             variant="primary"
             className="px-10 py-[1.125rem]"
             style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '1.125rem', paddingBottom: '1.125rem' }}

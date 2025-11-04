@@ -28,7 +28,7 @@ const MobileNav = (): ReactElement => {
       <Stack
         as="ul"
         direction={{ base: 'column', sm: 'row' }}
-        spacing={['4rem', '.6rem']}
+        gap={['4rem', '.6rem']}
         mt={['5.75rem']}
       >
         {links.slice(1).map(link => (

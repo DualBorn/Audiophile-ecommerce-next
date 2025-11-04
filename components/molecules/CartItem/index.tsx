@@ -18,8 +18,8 @@ const CartItemComponent: React.FC<{ item: CartItem }> = ({ item }): ReactElement
 
   return (
     <HStack justify="space-between" align="center">
-      <HStack align="center" sx={{ img: { borderRadius: '.5rem' } }}>
-        <Image src={item.cartImage} width={64} height={64} alt="" />
+      <HStack align="center" gap="1rem">
+        <Image src={item.cartImage} width={64} height={64} alt="" style={{ borderRadius: '.5rem' }} />
         <Box ml="1rem">
           <Text
             fontWeight="bold"

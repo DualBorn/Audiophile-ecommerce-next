@@ -17,7 +17,7 @@ const ProductDetails: React.FC<{ product: Product }> = ({
     <>
       <Stack
         mt={{ base: '1.5rem', lg: '3.5rem' }}
-        spacing={{ base: '2rem', lg: '7.75rem' }}
+        gap={{ base: '2rem', lg: '7.75rem' }}
         direction={{ base: 'column', sm: 'row' }}
         align={{ sm: 'center' }}
       >

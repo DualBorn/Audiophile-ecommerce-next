@@ -30,9 +30,9 @@ const ProductLink: React.FC<OtherProductsProps> = ({
         {name}
       </Heading>
       <Link href={`/${slug}`}>
-        {/* @ts-expect-error - Custom recipe variant */}
         <Button 
           cursor="pointer" 
+          // @ts-expect-error - Custom recipe variant
           variant="primary" 
           mt={{ base: '32px' }}
           className="px-10 py-[1.125rem]"

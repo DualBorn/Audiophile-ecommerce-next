@@ -10,7 +10,7 @@ const ProductsList: React.FC<{ products: Product[] }> = ({
   return (
     <VStack
       mt={{ base: '4rem' }}
-      spacing={{ base: '7.5rem' }}
+      gap={{ base: '7.5rem' }}
       mb={{ base: '7.5rem' }}
     >
       {products.map((product, index) => (

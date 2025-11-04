@@ -69,6 +69,7 @@ const Footer = (): React.JSX.Element => {
             maxWidth={{ md: '33.75rem' }}
           >
             <Text
+              // @ts-expect-error - Custom recipe variant
               variant="darkBackground"
               color="rgba(255,255,255,0.5)"
               fontSize="0.9375rem"
@@ -81,6 +82,7 @@ const Footer = (): React.JSX.Element => {
               and visit our demo facility - we&apos;re open 7 days a week.
             </Text>
             <Text
+              // @ts-expect-error - Custom recipe variant
               variant="darkBackground"
               color="rgba(255,255,255,0.5)"
               fontSize="0.9375rem"

@@ -123,12 +123,12 @@ const Summary = ({
         />
         
         {/* Submit button - submits the checkout form */}
-        {/* @ts-expect-error - Custom recipe variant (Chakra UI v3) */}
         <Button 
           type="submit" 
           width="100%" 
           mt="2rem" 
           disabled={isDisabled || isSubmitting} // Disable if cart is empty or already submitting
+          // @ts-expect-error - Custom recipe variant
           variant="primary"
           className="px-10 py-[1.125rem]"
           style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '1.125rem', paddingBottom: '1.125rem' }}

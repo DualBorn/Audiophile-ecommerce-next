@@ -72,8 +72,8 @@ const ZX9Speaker = (): React.JSX.Element => {
             truly remarkable sound.
           </Text>
           <Link href="/speakers/zx9-speaker">
-            {/* @ts-expect-error - Custom recipe variant */}
             <Button 
+              // @ts-expect-error - Custom recipe variant
               variant="primary"
               bg="black" 
               _hover={{ bg: '#4C4C4C' }}

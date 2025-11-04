@@ -5,6 +5,7 @@ const SkipLink = (): ReactElement => {
   return (
     <Button
       as="a"
+      // @ts-expect-error - href prop on Button with as="a"
       href="#main"
       position="absolute"
       left="1rem"

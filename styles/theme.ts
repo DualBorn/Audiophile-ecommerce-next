@@ -42,25 +42,6 @@ const theme = createSystem(
       },
       textStyles: {},
       layerStyles: {},
-      globalCss: {
-        body: {
-          bg: '#ffffff',
-          color: 'black',
-        },
-        'h1, h2, h3': {
-          textTransform: 'uppercase',
-        },
-        ul: {
-          listStyleType: 'none',
-        },
-        'a:focus, button:focus': {
-          outline: '2px dashed red',
-          outlineOffset: '4px',
-        },
-        'a:focus:not(:focus-visible), button:focus:not(:focus-visible)': {
-          outline: 'none',
-        },
-      },
     },
   }
 )

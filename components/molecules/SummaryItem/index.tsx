@@ -12,7 +12,7 @@ const SummaryItem = ({ item }: { item: CartItem }): React.JSX.Element => {
       gap="0.5rem"
       position="relative"
       width="100%"
-      sx={{
+      css={{
         '&:last-child:not(:first-of-type)::after': {
           content: "''",
           position: 'absolute',
@@ -22,9 +22,6 @@ const SummaryItem = ({ item }: { item: CartItem }): React.JSX.Element => {
           bottom: '-0.5rem',
           bg: 'rgba(0,0,0,.1)',
         },
-        'img': {
-          borderRadius: '0.5rem',
-        },
       }}
     >
       <Box
@@ -32,13 +29,6 @@ const SummaryItem = ({ item }: { item: CartItem }): React.JSX.Element => {
         width="4rem"
         height="4rem"
         flexShrink={0}
-        sx={{
-          'img': {
-            borderRadius: '0.5rem',
-            display: 'block',
-            objectFit: 'cover',
-          },
-        }}
       >
         <Image 
           src={item.cartImage} 

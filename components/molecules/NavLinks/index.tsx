@@ -12,7 +12,7 @@ const NavLinks = (): ReactElement => {
 
   return (
     <Box as="nav" display={{ base: 'none', lg: 'block' }}>
-      <HStack as="ul" display="flex" spacing={{ base: 8, lg: '2.5rem' }} listStyleType="none">
+      <HStack as="ul" display="flex" gap={{ base: 8, lg: '2.5rem' }} listStyleType="none">
         {links.map(link => {
           const isActive = pathname === link.url
           return (

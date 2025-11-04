@@ -52,8 +52,8 @@ const YX1Earphones = (): React.JSX.Element => {
               YX1 Earphones
             </Heading>
             <Link href="/earphones/yx1-earphones">
-              {/* @ts-expect-error - Custom recipe variant */}
               <Button 
+                // @ts-expect-error - Custom recipe variant
                 variant="secondary"
                 className="px-10 py-[1.125rem]"
                 style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '1.125rem', paddingBottom: '1.125rem' }}

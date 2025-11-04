@@ -101,9 +101,9 @@ const Hero = (): React.JSX.Element => {
           for the passionate music enthusiast.
         </Text>
         <Link href="/headphones/xx99-mark-two-headphones">
-          {/* @ts-expect-error - Custom recipe variant */}
           <Button 
             cursor="pointer" 
+            // @ts-expect-error - Custom recipe variant
             variant="primary" 
             as="button"
             className="px-10 py-[1.125rem]"

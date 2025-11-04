@@ -25,12 +25,12 @@ const Radio: React.FC<RadioProps> = ({ value, checked, onChange, children, ...pr
       position="relative"
       mb="1rem"
       cursor="pointer"
-      sx={{
+      css={{
         'input:checked ~ div::after': {
           transform: 'scale(1)',
         },
         '&:focus-within': {
-          borderColor: 'accent',
+          borderColor: 'var(--chakra-colors-accent)',
         },
       }}
     >

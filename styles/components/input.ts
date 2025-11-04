@@ -1,27 +1,26 @@
-const Input = {
-  baseStyle: {
-    field: {
-      fontWeight: 'bold',
-      borderRadius: '0.5rem',
-      _placeholder: {
-        color: 'placeholder',
-      },
+import { defineRecipe } from '@chakra-ui/react'
+
+const Input = defineRecipe({
+  className: 'input',
+  base: {
+    fontWeight: 'bold',
+    borderRadius: '0.5rem',
+    _placeholder: {
+      color: 'placeholder',
     },
   },
-  sizes: {
-    regular: {
-      field: {
+  variants: {
+    size: {
+      regular: {
         pl: '1rem',
         py: '1rem',
         fontSize: '0.875rem',
       },
     },
   },
-  defaultProps: {
+  defaultVariants: {
     size: 'regular',
-    focusBorderColor: 'accent',
-    errorBorderColor: 'inputError',
   },
-}
+})
 
 export default Input

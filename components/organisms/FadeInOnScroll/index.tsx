@@ -5,7 +5,8 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 
 type FadeInOnScrollProps = {
-  transition?: { duration: number; delay: number; ease: string }
+  children?: React.ReactNode
+  transition?: { duration: number; delay?: number; ease: string } | { ease: string; duration: number }
 }
 
 const FadeInOnScroll: React.FC<FadeInOnScrollProps> = ({
@@ -26,7 +27,7 @@ const FadeInOnScroll: React.FC<FadeInOnScrollProps> = ({
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={transition}
+      transition={transition as any}
       variants={{
         visible: { opacity: 1 },
         hidden: { opacity: 0 },

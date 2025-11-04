@@ -87,7 +87,7 @@ const CartModal = (): React.JSX.Element => {
                 Cart ({quantity})
               </Heading>
               <Button
-                variant="link"
+                variant="ghost"
                 fontSize="0.9375rem"
                 textTransform="capitalize"
                 m="0"
@@ -116,11 +116,11 @@ const CartModal = (): React.JSX.Element => {
               </Text>
             </HStack>
             <Link href="/checkout">
-              {/* @ts-expect-error - Custom recipe variant */}
               <Button
                 cursor="pointer"
                 onClick={onCartModalClose}
                 width="100%"
+                // @ts-expect-error - Custom recipe variant
                 variant="primary"
                 className="px-10 py-[1.125rem]"
                 style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '1.125rem', paddingBottom: '1.125rem' }}
@@ -132,7 +132,7 @@ const CartModal = (): React.JSX.Element => {
         ) : (
           <Box
             textAlign="center"
-            sx={{
+            css={{
               svg: {
                 display: 'block',
                 margin: 'auto',

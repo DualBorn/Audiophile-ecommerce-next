@@ -96,6 +96,7 @@ const ProductDescription = ({ product }: { product: Product }): React.JSX.Elemen
         <Button 
           onClick={addToCart} 
           disabled={isAdding}
+          // @ts-expect-error - Custom recipe variant
           variant="primary"
           className="px-10 py-[1.125rem]"
           style={{ paddingLeft: '2.5rem', paddingRight: '2.5rem', paddingTop: '1.125rem', paddingBottom: '1.125rem' }}

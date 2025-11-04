@@ -24,9 +24,9 @@ const CategoryLink = ({
         outline: '2px dashed red',
         outlineOffset: '4px',
       }}
-      sx={{
+      css={{
         '&:hover p': {
-          color: 'accent',
+          color: 'var(--chakra-colors-accent)',
         },
         'a:focus': {
           outline: 'none',

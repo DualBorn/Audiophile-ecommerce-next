@@ -10,7 +10,7 @@ const GoBackLink = (): ReactElement => {
   return (
     <Button
       as="button"
-      variant="link"
+      variant="ghost"
       onClick={() => router.back()}
       mt={{ base: '1rem', sm: '2rem', lg: '5rem' }}
       fontSize="0.9375rem"

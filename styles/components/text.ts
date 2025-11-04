@@ -1,25 +1,30 @@
-const Text = {
-  baseStyle: {
+import { defineRecipe } from '@chakra-ui/react'
+
+const Text = defineRecipe({
+  className: 'text',
+  base: {
     fontWeight: 'normal',
     lineHeight: '1.66',
   },
-  sizes: {
-    regular: {
-      fontSize: '0.9375rem',
-    },
-  },
   variants: {
-    lightBackground: {
-      color: 'text',
+    variant: {
+      lightBackground: {
+        color: 'text',
+      },
+      darkBackground: {
+        color: 'textLight',
+      },
     },
-    darkBackground: {
-      color: 'textLight',
+    size: {
+      regular: {
+        fontSize: '0.9375rem',
+      },
     },
   },
-  defaultProps: {
+  defaultVariants: {
     variant: 'lightBackground',
     size: 'regular',
   },
-}
+})
 
 export default Text

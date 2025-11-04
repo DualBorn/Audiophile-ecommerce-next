@@ -14,32 +14,31 @@ const MenuIcon = (): ReactElement => {
       aria-label={navOpen ? 'Close Menu' : 'Open Menu'}
       aria-expanded={navOpen ? 'true' : 'false'}
       mr={{ sm: '2.625rem', lg: 0 }}
-      variant="unstyled"
-      isRound={true}
+      variant="ghost"
+      borderRadius="50%"
       aria-haspopup="true"
       lineHeight={0}
       onClick={() => dispatch(toggleNav())}
       display={{ base: 'auto', lg: 'none' }}
-      icon={
-        navOpen ? (
-          <Image
-            src="/images/shared-images/tablet/icon-close-menu.svg"
-            width={16}
-            height={15}
-            aria-hidden="true"
-            alt=""
-          ></Image>
-        ) : (
-          <Image
-            src="/images/shared-images/tablet/icon-hamburger.svg"
-            width={16}
-            height={15}
-            aria-hidden="true"
-            alt=""
-          ></Image>
-        )
-      }
-    ></IconButton>
+    >
+      {navOpen ? (
+        <Image
+          src="/images/shared-images/tablet/icon-close-menu.svg"
+          width={16}
+          height={15}
+          aria-hidden="true"
+          alt=""
+        ></Image>
+      ) : (
+        <Image
+          src="/images/shared-images/tablet/icon-hamburger.svg"
+          width={16}
+          height={15}
+          aria-hidden="true"
+          alt=""
+        ></Image>
+      )}
+    </IconButton>
   )
 }
 
